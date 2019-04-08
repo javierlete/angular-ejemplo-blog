@@ -10,4 +10,8 @@ export class UserService {
   get(): Observable<User[]> {
     return of(USERS);
   }
+
+  getById(id: number): Observable<User> {
+    return of(USERS.filter(user => user.id === id).slice()[0]);
+  }
 }

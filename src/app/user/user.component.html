@@ -1,3 +1,22 @@
-<p>
-  user works!
-</p>
+<dl>
+  <dt>Id</dt>
+  <dd>{{ user.id }}</dd>
+  <dt>Name</dt>
+  <dd>{{ user.name }}</dd>
+  <dt>Address
+  <dd>
+    <dl>
+      <dt>City</dt>
+      <dd>{{ user.address.city }}</dd>
+      <dt>Geo</dt>
+      <dd>
+        <dl>
+          <dt>Lat</dt>
+          <dd>{{ user.address.geo.lat }}</dd>
+          <dt>Lng</dt>
+          <dd>{{ user.address.geo.lng }}</dd>
+        </dl>
+      </dd>
+    </dl>
+  </dd>
+</dl>
