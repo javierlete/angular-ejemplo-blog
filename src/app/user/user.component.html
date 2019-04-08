@@ -1,0 +1,18 @@
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Name</th>
+      <th>Lat</th>
+      <th>Lng</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users">
+      <th>{{ user.id }}</th>
+      <td>{{ user.name }}</td>
+      <td>{{ user.address.geo.lat }}</td>
+      <td>{{ user.address.geo.lng }}</td>
+    </tr>
+  </tbody>
+</table>
