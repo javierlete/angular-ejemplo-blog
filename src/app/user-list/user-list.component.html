@@ -5,6 +5,7 @@
             <th>Name</th>
             <th>Lat</th>
             <th>Lng</th>
+            <th>Opciones</th>
         </tr>
     </thead>
     <tbody>
@@ -13,6 +14,7 @@
             <td>{{ user.name }}</td>
             <td>{{ user.address.geo.lat }}</td>
             <td>{{ user.address.geo.lng }}</td>
+            <td><a routerLink="/users/{{ user.id }}">Ver</a></td>
         </tr>
     </tbody>
 </table>
