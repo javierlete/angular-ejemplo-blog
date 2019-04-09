@@ -14,7 +14,10 @@
             <td>{{ user.name }}</td>
             <td>{{ user.address.geo.lat }}</td>
             <td>{{ user.address.geo.lng }}</td>
-            <td><a routerLink="/users/{{ user.id }}">Ver</a></td>
+            <td>
+                <a routerLink="/users/{{ user.id }}">Detalles Usuario</a> | 
+                <a routerLink="/users/{{ user.id }}/posts">Posts</a>
+            </td>
         </tr>
     </tbody>
 </table>
