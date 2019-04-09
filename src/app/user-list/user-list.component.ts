@@ -17,6 +17,25 @@ export class UserListComponent implements OnInit {
     this.userService.get().subscribe(
       users => this.users = users
     );
+
+    //PRIMER DESGLOSE
+    //this.userService.get().subscribe(
+    //  function(users: User[]): User[] {
+    //    return this.users = users;
+    //  }
+    //);
+
+    //SEGUNDO DESGLOSE
+    //this.userService.get().subscribe(
+    //  transferirUsuarios
+    //);
+
+    //SEGUNDO DESGLOSE
+    //function transferirUsuarios(users: User[]): User[] {
+    //  return this.users = users;
+    //}
+    //TRADUCCIÓN A LENGUAJE C# O JAVA
+    //User[] transferirUsuarios(User[] users)
   }
 
 }
