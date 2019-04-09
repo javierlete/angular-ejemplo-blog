@@ -6,13 +6,15 @@ import { UserComponent } from './user/user.component';
 import { UserListComponent } from './user-list/user-list.component';
 import { AppRoutingModule } from './app-routing.module';
 import { PostListComponent } from './post-list/post-list.component';
+import { PostComponent } from './post/post.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UserComponent,
     UserListComponent,
-    PostListComponent
+    PostListComponent,
+    PostComponent
   ],
   imports: [
     BrowserModule,

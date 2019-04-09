@@ -14,7 +14,12 @@ export class PostService {
     return of(POSTS);
   }
 
-  getByUserId(id: number) {
+  getByUserId(id: number): Observable<Post[]> {
     return of(POSTS.filter(post => post.userId === id));
+  }
+
+  getById(id: number): Observable<Post> {
+    return of(POSTS.filter(post => post.id === id).slice()[0]);
+
   }
 }
